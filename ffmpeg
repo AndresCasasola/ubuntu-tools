@@ -1,0 +1,8 @@
+
+
+Video duration /30:
+ffmpeg -i input.mp4 -filter:v "setpts=PTS/30" output.mp4
+
+Video duration x2:
+ffmpeg -i input.mp4 -filter:v "setpts=2*PTS" output.mp4
+
